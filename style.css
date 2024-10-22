@@ -17,11 +17,17 @@
 a {
     text-decoration: none;
 }
-body.barken_media{
+
+body.barken_media {
     background: #F4F4F4;
 }
+
 .primary-shade-3-text {
     color: var(--primary-shade-3);
+}
+
+.primary-text {
+    color: var(--primary-color) !important;
 }
 
 .primary-shade-3-bg {
@@ -101,7 +107,8 @@ body.barken_media{
     /* 46.8px */
 }
 
-.barken_media p {
+.barken_media p,
+.barken_media p a {
     color: var(--gray, #6A6A6A);
     text-align: center;
     font-family: Inter;
@@ -131,10 +138,15 @@ body.barken_media{
     color: var(--white);
 }
 
-.section-gap {
+.section-gap-pad {
+    padding: 80px 0;
+}
+
+.section-gap-margin {
     margin: 80px 0;
 }
-.logo-height{
+
+.logo-height {
     height: 60px;
 }
 
@@ -144,34 +156,41 @@ body.barken_media{
     padding: 20px 0;
     color: var(--white);
 }
+
 a.btn.secondery_btn.primary-shade-3-bg:hover {
     background: #fff;
     color: #3097b2;
     border: 1px solid #3097b2;
 }
+
 a.icon:hover {
     background: var(--primary-color);
-    color: var(--white);
+    color: var(--white) !important;
     border: 1px solid var(--white);
 }
+
 a.icon-no-hover:hover {
     background: var(--white);
     color: var(--primary-color);
     border: 0;
 }
+
 a.btn.secondery_btn.primary-bg:hover {
     background: var(--white);
     color: var(--primary-color);
     box-shadow: 0px 0px 0px 1px var(--primary-color);
 }
+
 .barken_media .icon-group {
     display: flex;
     gap: 10px;
     align-items: center;
 }
+
 a.nav-link.active {
     color: #3097b2 !important;
 }
+
 .barken_media .icon {
     width: 35px;
     height: 35px;
@@ -186,8 +205,23 @@ a.nav-link.active {
 
 .hero-section {
     background: url(./img/hero-background.png);
-    padding: 50px;
+    /* padding: 50px; */
     background-size: cover;
+    /* min-height: calc(100vh - 240px); */
+    position: relative;
+}
+
+.right-img {
+    position: relative;
+    text-align: right;
+}
+
+.testimonial-card {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    font-weight: 600;
+    text-align: left;
 }
 
 .hero-section h1,
@@ -195,9 +229,11 @@ a.nav-link.active {
     text-align: left;
     margin-bottom: 20px;
 }
-.custom-border{
+
+.custom-border {
     position: relative;
 }
+
 .custom-border::after {
     content: '';
     position: absolute;
@@ -208,10 +244,69 @@ a.nav-link.active {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* footer section */
+.footer-left-sec-text span,
+.footer-left-sec-text a {
+    color: var(--primary-color);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+}
+
+#berken_footer a.icon {
+    border: 1px solid gray;
+    color: gray;
+}
+
+.footer-title {
+    color: var(--primary-color);
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 33.6px */
+}
+
+.footer-subtitle {
+    color: var(--primary-color);
+    text-align: right;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+}
+
+.get-in-subtitle {
+    color: var(--white);
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
 /* Media Queries */
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 991px) {
+    .get-in-bg {
+        padding: 50px !important;
+    }
+    .section-gap-pad {
+        padding: 50px 0;
+    }
+
+    .section-gap-margin {
+        padding: 50px 0;
+    }
+
     .hero-title {
         font-size: 36px;
     }
@@ -236,33 +331,140 @@ a.nav-link.active {
         font-size: 28px;
     }
 
-    .barken_media p {
+    .barken_media p,
+    .barken_media ul li,
+    .barken_media p a {
         font-size: 14px;
     }
 
     .hero-section {
         padding: 20px;
     }
+
     .barken_media .secondery_btn {
         padding: 8px 16px;
         font-size: 14px;
     }
+
     .barken_media .icon {
         width: 25px;
         height: 25px;
         font-size: 15px;
     }
-    .logo-height{
+
+    .logo-height {
         height: 50px;
+    }
+
+    .footer-left-sec-text span,
+    .footer-left-sec-text a {
+        font-size: 14px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .custom-border::after {
+        display: none;
+    }
+
+    .row-reverse {
+        flex-direction: column-reverse;
     }
 }
 
+@media (max-width: 767px) {
+    .get-in-bg {
+        padding: 30px !important;
+    }
+    .section-gap-pad {
+        padding: 30px 0;
+    }
+
+    .section-gap-margin {
+        padding: 30px 0;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .card-middle-number {
+        font-size: 45px;
+    }
+
+    .card-bottom-text {
+        font-size: 14px;
+    }
+
+    .barken_media .card-title {
+        font-size: 22px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    /* .barken_media p {
+        font-size: 12px;
+    } */
+
+    .hero-section {
+        padding: 15px;
+    }
+
+    .barken_media .secondery_btn {
+        padding: 6px 12px;
+        /* font-size: 12px; */
+    }
+
+    .barken_media .icon {
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+    }
+
+    .logo-height {
+        height: 40px;
+    }
+
+    /* .footer-left-sec-text span,
+    .footer-left-sec-text a {
+        font-size: 12px;
+    } */
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .custom-border::after {
+        display: none;
+    }
+}
+
+
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (max-width: 991px) {
     .barken_media .secondery_btn {
         padding: 10px 18px;
         font-size: 16px;
     }
+
     .hero-title {
         font-size: 44px;
     }
@@ -290,39 +492,52 @@ a.nav-link.active {
     .hero-section {
         padding: 30px;
     }
+    .footer-left-sec-text span,
+    .footer-left-sec-text a {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    .footer-subtitle {
+        font-size: 22px;
+    }
+} */
+.testimonial-card {
+    border-radius: 12px;
+    background-color: white;
+    max-width: 500px;
+    display: inline-block;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .barken_media .secondery_btn {
-        padding: 12px 20px;
-        font-size: 18px;
-    }
-    .hero-title {
-        font-size: 48px;
-    }
+/* blockquote {
+    font-size: 1.25rem;
+    color: #333;
+} */
 
-    .main-title {
-        font-size: 45px;
-    }
+/* .blockquote-footer {
+    font-size: 0.875rem;
+    color: #777;
+} */
 
-    .card-middle-number {
-        font-size: 75px;
-    }
+.quote-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
 
-    .card-bottom-text {
-        font-size: 19px;
-    }
+.quote-icon svg {
+    fill: #9ca3af;
+}
 
-    .barken_media .card-title {
-        font-size: 30px;
-    }
-
-    .sub-title {
-        font-size: 36px;
-    }
-
-    .hero-section {
-        padding: 40px;
-    }
+.get-in-bg {
+    background-color: rgba(1, 38, 67, 0.80);
+    background-image: url(./img/Automate-Your-Law-Firm%201.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
 }
