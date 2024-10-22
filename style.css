@@ -1,0 +1,328 @@
+:root {
+    --primary-color: #012643;
+    --primary-color-2: #2F3645;
+    --primary-shade: #155176;
+    --primary-shade-2: #147896;
+    --primary-shade-3: #3097B2;
+    --primary-shade-4: #61778B;
+    --gray: #6A6A6A;
+    --white: #FFFFFF;
+
+}
+
+* {
+    font-family: "inter";
+}
+
+a {
+    text-decoration: none;
+}
+body.barken_media{
+    background: #F4F4F4;
+}
+.primary-shade-3-text {
+    color: var(--primary-shade-3);
+}
+
+.primary-shade-3-bg {
+    background: var(--primary-shade-3);
+    color: var(--white);
+}
+
+.nav-link {
+    color: var(--primary-color-2);
+    font-family: Inter;
+    /* font-size: 18px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-title {
+    color: var(--primary-color-2);
+    font-family: "Playfair Display";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    /* 57.2px */
+}
+
+.main-title {
+    color: var(--primary-color-2);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    /* 58.8px */
+}
+
+.card-middle-number {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 96px */
+}
+
+.card-bottom-text {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 28.8px */
+}
+
+.barken_media .card-title {
+    color: var(--primary-color-2);
+    font-family: Inter;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 37.2px */
+}
+
+.sub-title {
+    color: #000;
+    font-family: "Playfair Display";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 46.8px */
+}
+
+.barken_media p {
+    color: var(--gray, #6A6A6A);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+}
+
+.barken_media .secondery_btn {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* background: var(--primary-shade-3); */
+}
+
+.primary-bg {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.primary-bg:hover {
+    background: var(--primary-color-2);
+    color: var(--white);
+}
+
+.section-gap {
+    margin: 80px 0;
+}
+.logo-height{
+    height: 60px;
+}
+
+/* custom style */
+.barken_media .tob-bar {
+    background: var(--primary-color);
+    padding: 20px 0;
+    color: var(--white);
+}
+a.btn.secondery_btn.primary-shade-3-bg:hover {
+    background: #fff;
+    color: #3097b2;
+    border: 1px solid #3097b2;
+}
+a.icon:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+a.icon-no-hover:hover {
+    background: var(--white);
+    color: var(--primary-color);
+    border: 0;
+}
+a.btn.secondery_btn.primary-bg:hover {
+    background: var(--white);
+    color: var(--primary-color);
+    box-shadow: 0px 0px 0px 1px var(--primary-color);
+}
+.barken_media .icon-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+a.nav-link.active {
+    color: #3097b2 !important;
+}
+.barken_media .icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.hero-section {
+    background: url(./img/hero-background.png);
+    padding: 50px;
+    background-size: cover;
+}
+
+.hero-section h1,
+.hero-section p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.custom-border{
+    position: relative;
+}
+.custom-border::after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 2px;
+    background: #D8D8D8;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Media Queries */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .card-middle-number {
+        font-size: 50px;
+    }
+
+    .card-bottom-text {
+        font-size: 16px;
+    }
+
+    .barken_media .card-title {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+
+    .barken_media p {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 20px;
+    }
+    .barken_media .secondery_btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .barken_media .icon {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .logo-height{
+        height: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .barken_media .secondery_btn {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .card-middle-number {
+        font-size: 70px;
+    }
+
+    .card-bottom-text {
+        font-size: 18px;
+    }
+
+    .barken_media .card-title {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 34px;
+    }
+
+    .hero-section {
+        padding: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .barken_media .secondery_btn {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .main-title {
+        font-size: 45px;
+    }
+
+    .card-middle-number {
+        font-size: 75px;
+    }
+
+    .card-bottom-text {
+        font-size: 19px;
+    }
+
+    .barken_media .card-title {
+        font-size: 30px;
+    }
+
+    .sub-title {
+        font-size: 36px;
+    }
+
+    .hero-section {
+        padding: 40px;
+    }
+}
