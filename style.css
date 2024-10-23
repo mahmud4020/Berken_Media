@@ -293,6 +293,34 @@ a.nav-link.active {
     line-height: 120%;
 }
 
+.testimonial-card {
+    border-radius: 12px;
+    background-color: white;
+    max-width: 500px;
+    display: inline-block;
+}
+
+.quote-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.quote-icon svg {
+    fill: #9ca3af;
+}
+
+.get-in-bg {
+    background-color: rgba(1, 38, 67, 0.80);
+    background-image: url(./img/Automate-Your-Law-Firm%201.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+}
+
 /* Media Queries */
 
 /* Small devices (landscape phones, less than 768px) */
@@ -384,6 +412,9 @@ a.nav-link.active {
 }
 
 @media (max-width: 767px) {
+    .testimonial-card{
+        max-width: 100%;
+    }
     .get-in-subtitle {
         font-size: 20px;
       }
@@ -436,8 +467,6 @@ a.nav-link.active {
     }
 
     .barken_media .icon {
-        width: 20px;
-        height: 20px;
         font-size: 13px;
     }
 
@@ -464,32 +493,3 @@ a.nav-link.active {
     }
 }
 
-
-
-.testimonial-card {
-    border-radius: 12px;
-    background-color: white;
-    max-width: 500px;
-    display: inline-block;
-}
-
-.quote-icon {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.quote-icon svg {
-    fill: #9ca3af;
-}
-
-.get-in-bg {
-    background-color: rgba(1, 38, 67, 0.80);
-    background-image: url(./img/Automate-Your-Law-Firm%201.png);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    padding: 100px;
-    text-align: center;
-    color: #fff;
-}
