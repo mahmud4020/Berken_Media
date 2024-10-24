@@ -62,6 +62,7 @@ body.barken_media {
     font-style: normal;
     font-weight: 800;
     line-height: 120%;
+    margin-bottom: 15px;
     /* 58.8px */
 }
 
@@ -332,7 +333,7 @@ a.nav-link.active {
         padding: 50px !important;
     }
     .section-gap-pad {
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
     .section-gap-margin {
