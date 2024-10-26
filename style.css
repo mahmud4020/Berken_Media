@@ -109,7 +109,9 @@ body.barken_media {
 }
 
 .barken_media p,
-.barken_media p a {
+.barken_media p a,
+.barken_media .accordion-body,
+.contact-label {
     color: var(--gray, #6A6A6A);
     text-align: center;
     font-family: Inter;
@@ -140,7 +142,7 @@ body.barken_media {
 }
 
 .section-gap-pad {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .section-gap-margin {
@@ -151,6 +153,13 @@ body.barken_media {
     height: 60px;
 }
 
+.card.bg-none {
+    background: transparent;
+    border: 0;
+}
+.blog-titile{
+    color: #000 !important;
+}
 /* custom style */
 .barken_media .tob-bar {
     background: var(--primary-color);
@@ -285,7 +294,8 @@ a.nav-link.active {
     /* 30px */
 }
 
-.get-in-subtitle {
+.get-in-subtitle,
+.blog-titile {
     color: var(--white);
     font-family: "Playfair Display";
     font-size: 25px;
@@ -384,15 +394,99 @@ a.nav-link.active {
     color: var(--primary-color-2);
     font-weight: 400;
 }
-.svg-responsive{
+
+.svg-responsive {
     width: 85px;
     height: 85px;
+}
+
+/* FAQ Section */
+
+.barken_media .accordion-item {
+    border-radius: 5px !important;
+}
+
+.faq-title {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.barken_media .accordion-body{
+    text-align: left;
+}
+
+/* contact us */
+/* Contact Us Sections*/
+.barken_media .form-check-input:checked {
+    background-color: gray;
+    border-color: gray;
+}
+
+.custom-padding-bottom {
+    padding-bottom: 5rem;
+}
+
+#contact_us {
+    padding: 5rem 0rem 0rem 0rem;
+    background: rgba(241, 235, 223, 0.7);
+}
+
+.contact_item_wrap .contact_item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.contact_item_wrap .contact_item .icon {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_item_wrap .contact_item .text h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: #3A3A3A;
+}
+
+.contact_item_wrap .contact_item .text {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+
+.contact_form h3 {
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact_form .form-group .form-control {
+    min-height: 45px;
+    color: #000;
+    font-size: 16px;
+    background-color: var(--white);
+    border: 1px solid #e1e1e1;
+    box-shadow: none;
+    border-radius: 0.5rem;
 }
 
 /* Media Queries */
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 991px) {
+    .faq-title{
+        font-size: 16px;
+    }
     .dropdown-toggle::after {
         display: inline-block;
         margin-left: .255em;
@@ -410,7 +504,8 @@ a.nav-link.active {
         transform: translateY(-50%);
     }
 
-    .get-in-subtitle {
+    .get-in-subtitle,
+    .blog-titile {
         font-size: 22px;
     }
 
@@ -419,7 +514,7 @@ a.nav-link.active {
     }
 
     .section-gap-pad {
-        padding: 40px 0;
+        padding: 80px 0;
     }
 
     .section-gap-margin {
@@ -452,7 +547,9 @@ a.nav-link.active {
 
     .barken_media p,
     .barken_media ul li,
-    .barken_media p a {
+    .barken_media p a,
+    .contact-label,
+    .barken_media .accordion-body {
         font-size: 14px;
     }
 
@@ -492,11 +589,42 @@ a.nav-link.active {
     .custom-border::after {
         display: none;
     }
+
     .swiper {
         width: 100% !important;
     }
 
+    .barken_media .accordion-item {
+        border-radius: 3px !important;
+    }
 
+    #contact_us {
+        padding: 4rem 0 0 0;
+    }
+
+
+    .contact_item_wrap .contact_item .icon {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact_item_wrap .contact_item .text h4 {
+        font-size: 16px;
+    }
+
+    .contact_item_wrap .contact_item .text {
+        font-size: 14px;
+    }
+
+    .contact_form h3 {
+        font-size: 28px;
+    }
+
+    .contact_form .form-group .form-control {
+        min-height: 40px;
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -508,7 +636,8 @@ a.nav-link.active {
         max-width: 100%;
     }
 
-    .get-in-subtitle {
+    .get-in-subtitle,
+    .blog-titile {
         font-size: 20px;
     }
 
@@ -517,7 +646,7 @@ a.nav-link.active {
     }
 
     .section-gap-pad {
-        padding: 30px 0;
+        padding: 60px 0;
     }
 
     .section-gap-margin {
@@ -586,6 +715,38 @@ a.nav-link.active {
     .custom-border::after {
         display: none;
     }
+
+    .barken_media .accordion-item {
+        border-radius: 2px !important;
+    }
+
+    #contact_us {
+        padding: 3rem 0 0 0;
+    }
+
+
+    .contact_item_wrap .contact_item .icon {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact_item_wrap .contact_item .text h4 {
+        font-size: 14px;
+    }
+
+    .contact_item_wrap .contact_item .text {
+        font-size: 12px;
+    }
+
+    .contact_form h3 {
+        font-size: 24px;
+    }
+
+    .contact_form .form-group .form-control {
+        min-height: 35px;
+        font-size: 14px;
+    }
 }
 
 /* For devices with a max width of 768px (tablets and small devices) */
@@ -636,5 +797,6 @@ a.nav-link.active {
         font-size: 25px !important;
     }
 }
+
 
 
