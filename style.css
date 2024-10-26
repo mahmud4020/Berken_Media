@@ -800,3 +800,54 @@ a.nav-link.active {
 
 
 
+/* about us */
+
+/* hero-sec */
+.no-bg-img{
+    background-image: unset;
+}
+.hero-left-space{
+    padding: 0 100px;
+}
+.hero-left-space {
+    padding: 0 0 50px 290px;
+}
+.about-us-bg-effect{
+    position: relative;
+    z-index: 1;
+    /* background-image: url(./img/bg-effect.png);
+    background-size: contain; */
+    
+    /* background-position: center;
+    background-size: contain; */
+}
+.about-us-bg-effect::after{
+    content: '';
+    border-radius: 181.5px;
+    background: var(--Color-3, #3097B2);
+    filter: blur(100px);
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+}
+.about-us-bg-effect::before{
+    content: '';
+    border-radius: 181.5px;
+    background: var(--Color-3, #3097B2);
+    filter: blur(100px);
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+
+}
+.custom-padding-about-sec{
+    padding: 100px;
+}
