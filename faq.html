@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>barken_media</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- font Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Include Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="barken_media">
+
+    <header class="sticky-top">
+        <!-- top section -->
+        <div class="tob-bar">
+            <div class="container row mx-auto gy-3">
+                <div class="col-md-6">
+                    <div class="icon-group">
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fab fa-x"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a class="icon d-md-none d-flex">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-flex d-none justify-content-end">
+                    <div class="icon-group">
+                        <a class="icon icon-no-hover">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a class="text-white" href="#">
+                            (888) 123-12347
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu section -->
+
+        <!-- desktop menu -->
+        <div class="menu-bar bg-white shadow-sm">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./img/berken-media-logo 1.png" alt="" class="img-fluid logo-height">
+                        </a>
+
+                        <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-center" aria-current="page"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link" href="about-us.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+                                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                        <li><a class="dropdown-item" href="#">Service 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Service 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link" href="#">Blogs</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="btn secondery_btn primary-bg">Book A Meeting</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- mobile menu -->
+
+        <div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <img src="./img/berken-media-logo 1.png" alt="Logo" class="img-fluid logo-height">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="w-100 dropdown-menu text" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Disclaimer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <div class="icon-group mb-2">
+                        <a class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <path
+                                    d="M3.125 7.29168C3.125 6.73914 3.34449 6.20924 3.73519 5.81854C4.12589 5.42784 4.6558 5.20834 5.20833 5.20834H19.7917C20.3442 5.20834 20.8741 5.42784 21.2648 5.81854C21.6555 6.20924 21.875 6.73914 21.875 7.29168V17.7083C21.875 18.2609 21.6555 18.7908 21.2648 19.1815C20.8741 19.5722 20.3442 19.7917 19.7917 19.7917H5.20833C4.6558 19.7917 4.12589 19.5722 3.73519 19.1815C3.34449 18.7908 3.125 18.2609 3.125 17.7083V7.29168Z"
+                                    stroke="#012643" stroke-width="2.08333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.125 7.29169L12.5 13.5417L21.875 7.29169" stroke="#012643"
+                                    stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" class="primary-text">
+                            info@berkenmedia.com
+                        </a>
+                    </div>
+
+                    <div class="icon-group mb-2">
+                        <a class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <path opacity="0.2"
+                                    d="M21.0879 17.7812C20.9362 18.915 20.3778 19.9552 19.5167 20.7082C18.6555 21.4612 17.5502 21.8758 16.4063 21.875C12.8838 21.875 9.50571 20.4757 7.01499 17.985C4.52427 15.4943 3.125 12.1161 3.125 8.59371C3.12413 7.44977 3.53875 6.34444 4.29176 5.4833C5.04477 4.62215 6.08492 4.06379 7.21875 3.91207C7.38636 3.89216 7.55591 3.92707 7.70203 4.01157C7.84814 4.09607 7.96296 4.22562 8.0293 4.38082L10.0928 8.9902C10.1435 9.10858 10.1641 9.23767 10.1529 9.36597C10.1416 9.49426 10.0988 9.61779 10.0283 9.72555L7.94141 12.207C7.86738 12.3187 7.82361 12.4477 7.81436 12.5814C7.80512 12.7151 7.83072 12.8489 7.88867 12.9697C8.69629 14.623 10.4053 16.3115 12.0635 17.1113C12.1849 17.169 12.3194 17.194 12.4534 17.1839C12.5875 17.1738 12.7167 17.1289 12.8281 17.0537L15.2695 14.9736C15.3777 14.9016 15.5022 14.8577 15.6316 14.846C15.761 14.8342 15.8913 14.8549 16.0107 14.9062L20.6162 16.9697C20.7721 17.0356 20.9024 17.1504 20.9875 17.2967C21.0726 17.4431 21.1078 17.6131 21.0879 17.7812Z"
+                                    fill="#012643" />
+                                <path
+                                    d="M14.0889 4.48534C14.1154 4.38619 14.1612 4.29324 14.2236 4.21179C14.2861 4.13035 14.364 4.06201 14.4529 4.01068C14.5417 3.95935 14.6399 3.92603 14.7416 3.91264C14.8434 3.89924 14.9468 3.90602 15.0459 3.9326C16.4942 4.31048 17.8156 5.06761 18.874 6.126C19.9324 7.18439 20.6895 8.50578 21.0674 9.95409C21.094 10.0532 21.1008 10.1566 21.0874 10.2584C21.074 10.3601 21.0406 10.4583 20.9893 10.5471C20.938 10.636 20.8696 10.7139 20.7882 10.7763C20.7068 10.8388 20.6138 10.8846 20.5147 10.9111C20.4487 10.9285 20.3807 10.9373 20.3125 10.9375C20.1404 10.9375 19.973 10.8806 19.8365 10.7757C19.7 10.6708 19.602 10.5238 19.5576 10.3574C19.2494 9.17511 18.6315 8.09638 17.7676 7.23243C16.9036 6.36848 15.8249 5.75056 14.6426 5.44237C14.5434 5.41595 14.4503 5.37023 14.3687 5.30782C14.2872 5.24541 14.2187 5.16754 14.1673 5.07865C14.1159 4.98976 14.0825 4.89161 14.069 4.7898C14.0556 4.688 14.0623 4.58454 14.0889 4.48534ZM13.8613 8.56737C15.208 8.92674 16.0733 9.79198 16.4326 11.1387C16.477 11.305 16.575 11.4521 16.7115 11.557C16.848 11.6619 17.0154 11.7187 17.1875 11.7187C17.2557 11.7186 17.3237 11.7097 17.3897 11.6924C17.4888 11.6659 17.5818 11.6201 17.6632 11.5576C17.7446 11.4951 17.813 11.4173 17.8643 11.3284C17.9156 11.2395 17.949 11.1414 17.9624 11.0396C17.9758 10.9379 17.969 10.8345 17.9424 10.7353C17.4424 8.86424 16.1358 7.5576 14.2647 7.0576C14.0645 7.00412 13.8512 7.03236 13.6718 7.13611C13.4924 7.23986 13.3616 7.41062 13.3081 7.61083C13.2546 7.81103 13.2829 8.02429 13.3866 8.20367C13.4904 8.38306 13.6611 8.51389 13.8613 8.56737ZM21.8633 17.8789C21.6892 19.2022 21.0393 20.4168 20.0351 21.296C19.0308 22.1751 17.7409 22.6586 16.4063 22.6562C8.65235 22.6562 2.34376 16.3476 2.34376 8.59374C2.34137 7.25906 2.8249 5.96915 3.70405 4.96492C4.58319 3.9607 5.79783 3.31083 7.1211 3.1367C7.45573 3.09585 7.79459 3.1643 8.08711 3.33186C8.37962 3.49941 8.61011 3.75708 8.74415 4.06639L10.8067 8.67089V8.6826C10.9093 8.91937 10.9517 9.17788 10.93 9.43502C10.9084 9.69217 10.8234 9.93995 10.6826 10.1562C10.665 10.1826 10.6465 10.207 10.627 10.2314L8.59376 12.6416C9.32521 14.1279 10.8799 15.6689 12.3858 16.4023L14.7627 14.3799C14.786 14.3602 14.8105 14.342 14.8359 14.3252C15.0521 14.181 15.3007 14.0931 15.5594 14.0692C15.818 14.0453 16.0786 14.0863 16.3174 14.1885L16.3301 14.1943L20.9307 16.2558C21.2405 16.3894 21.4988 16.6197 21.6669 16.9123C21.835 17.2048 21.9039 17.5439 21.8633 17.8789ZM20.3125 17.6836H20.3018L15.7119 15.6279L13.334 17.6504C13.311 17.67 13.2869 17.6883 13.2617 17.7051C13.0369 17.8551 12.777 17.9442 12.5074 17.9637C12.2378 17.9832 11.9677 17.9325 11.7236 17.8164C9.89454 16.9326 8.0713 15.123 7.18653 13.3135C7.06937 13.0711 7.0168 12.8027 7.03391 12.534C7.05102 12.2654 7.13723 12.0058 7.28419 11.7803C7.30071 11.7538 7.31932 11.7286 7.33985 11.7051L9.37501 9.29198L7.32423 4.70213C7.32384 4.69824 7.32384 4.69431 7.32423 4.69042C6.37721 4.81395 5.5077 5.27847 4.87854 5.99697C4.24937 6.71548 3.9037 7.6387 3.90626 8.59374C3.90988 11.9078 5.228 15.0852 7.57142 17.4286C9.91484 19.772 13.0922 21.0901 16.4063 21.0937C17.3607 21.097 18.2837 20.7526 19.0026 20.1248C19.7215 19.497 20.1872 18.6288 20.3125 17.6826V17.6836Z"
+                                    fill="#012643" />
+                            </svg>
+                        </a>
+                        <a href="#" class="primary-text">
+                            (888) 124-1234
+                        </a>
+                    </div>
+
+                    <div class="icon-group mb-2">
+                        <a class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <path
+                                    d="M12.5 2.08331C10.3042 2.0832 8.1971 2.94973 6.63667 4.49455C5.07624 6.03938 4.18858 8.13765 4.16663 10.3333C4.16663 16.0416 11.5104 22.3958 11.8229 22.6666C12.0116 22.828 12.2517 22.9167 12.5 22.9167C12.7482 22.9167 12.9884 22.828 13.177 22.6666C13.5416 22.3958 20.8333 16.0416 20.8333 10.3333C20.8113 8.13765 19.9237 6.03938 18.3633 4.49455C16.8028 2.94973 14.6957 2.0832 12.5 2.08331ZM12.5 20.4687C10.7604 18.8125 6.24996 14.2187 6.24996 10.3333C6.24996 8.67571 6.90844 7.086 8.08054 5.9139C9.25265 4.74179 10.8424 4.08331 12.5 4.08331C14.1576 4.08331 15.7473 4.74179 16.9194 5.9139C18.0915 7.086 18.75 8.67571 18.75 10.3333C18.75 14.1875 14.2395 18.8125 12.5 20.4687Z"
+                                    fill="#012643" />
+                                <path
+                                    d="M12.5 6.25C11.7789 6.25 11.074 6.46382 10.4744 6.86443C9.87489 7.26504 9.40759 7.83444 9.13165 8.50063C8.85571 9.16682 8.78351 9.89988 8.92418 10.6071C9.06486 11.3143 9.41209 11.9639 9.92197 12.4738C10.4318 12.9837 11.0815 13.3309 11.7887 13.4716C12.4959 13.6123 13.229 13.5401 13.8952 13.2641C14.5614 12.9882 15.1308 12.5209 15.5314 11.9214C15.932 11.3218 16.1458 10.6169 16.1458 9.89583C16.1458 8.9289 15.7617 8.00157 15.078 7.31784C14.3942 6.63411 13.4669 6.25 12.5 6.25ZM12.5 11.4583C12.1909 11.4583 11.8888 11.3667 11.6319 11.195C11.3749 11.0233 11.1747 10.7793 11.0564 10.4938C10.9381 10.2083 10.9072 9.8941 10.9675 9.591C11.0278 9.28791 11.1766 9.0095 11.3951 8.79098C11.6136 8.57246 11.892 8.42365 12.1951 8.36336C12.4982 8.30307 12.8124 8.33401 13.0979 8.45227C13.3834 8.57053 13.6274 8.7708 13.7991 9.02776C13.9708 9.28471 14.0625 9.5868 14.0625 9.89583C14.0625 10.3102 13.8978 10.7077 13.6048 11.0007C13.3118 11.2937 12.9144 11.4583 12.5 11.4583Z"
+                                    fill="#012643" />
+                            </svg>
+                        </a>
+                        <a href="#" class="primary-text">
+                            633 Chestnut Street, Suite
+                            600, Chattanooga,
+                            TN 37450
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- top hero section -->
+        <section>
+            <div class="hero-section no-bg-img">
+                <div class="container">
+                    <div class="row align-items-center gy-3 row-reverse mx-auto">
+                        <div class="col-md-6 p-0">
+                            <div class="pe-md-5 py-md-5 py-3">
+                                <h1 class="hero-title">
+                                    If you’re looking for a reliable partner to grow your legal practice, you’re in the
+                                    right place.
+                                </h1>
+                                <p>
+                                    Transform your law firm's success with our top- rated digital marketing services,
+                                    from SEO and PPC to website design and social media. At Berken Media, we specialize
+                                    in connecting you with high-quality clients and driving sustainable growth.
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="btn secondery_btn primary-shade-3-bg w-auto">Get Started
+                                        Today</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-width-img">
+                    <img src="./img/faq-img.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ section -->
+        <section class="section-gap-pad">
+            <div class="container">
+                <h1 class="main-title">
+                    You may have questions, and we <br> have the answers
+                </h1>
+                <p>
+                    At Berken Media, we prioritize customer satisfaction. Here’s what our clients have to say <br> about
+                    how our innovative solutions have enhanced their operations and exceeded expectations.
+                </p>
+                <div class="row mt-md-5 mt-3">
+                    <div class="col-md-6">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true"
+                                        aria-controls="collapse_1">
+                                        What type of leads do you generate?
+                                    </button>
+                                </h2>
+                                <div id="collapse_1" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false"
+                                        aria-controls="collapse_2">
+                                        How do you generate leads?
+                                    </button>
+                                </h2>
+                                <div id="collapse_2" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false"
+                                        aria-controls="collapse_3">
+                                        what is your success rate?
+                                    </button>
+                                </h2>
+                                <div id="collapse_3" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="false"
+                                        aria-controls="collapse_4">
+                                        How are leads delivered?
+                                    </button>
+                                </h2>
+                                <div id="collapse_4" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="false"
+                                        aria-controls="collapse_5">
+                                        How can i get started with Berken Media?
+                                    </button>
+                                </h2>
+                                <div id="collapse_5" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed shadow-none faq-title" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_6" aria-expanded="false"
+                                        aria-controls="collapse_6">
+                                        Do you offer ongoing support?
+                                    </button>
+                                </h2>
+                                <div id="collapse_6" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_7" aria-expanded="false"
+                                        aria-controls="collapse_7">
+                                        What should I expect during my initial consultation?
+                                    </button>
+                                </h2>
+                                <div id="collapse_7" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_8" aria-expanded="false"
+                                        aria-controls="collapse_8">
+                                        What should I expect during my initial consultation?
+                                    </button>
+                                </h2>
+                                <div id="collapse_8" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_9" aria-expanded="false"
+                                        aria-controls="collapse_9">
+                                        What should I expect during my initial consultation?
+                                    </button>
+                                </h2>
+                                <div id="collapse_9" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-md-3 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button faq-title collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse_9" aria-expanded="false"
+                                        aria-controls="collapse_9">
+                                        What should I expect during my initial consultation?
+                                    </button>
+                                </h2>
+                                <div id="collapse_9" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Still, Have Questions? section -->
+        <section class="section-gap-pad">
+            <div class="get-in-bg">
+                <h5 class="get-in-subtitle mb-2">
+                    Still, Have Questions?
+                </h5>
+                <h1 class="main-title text-white mb-2">
+                    Our goal is to ensure that accident victims find the right legal <br>
+                    representation quickly and efficiently
+                </h1>
+                <p class="text-white">
+                    If you didn’t find the answer you were looking for, feel free to reach out to us.
+                    We’re here to help.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn secondery_btn primary-shade-3-bg w-auto">Contact Us Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- contact us section -->
+        <section class="section-gap-pad">
+            <div class="container">
+                <div class="row g-md-5 g-3 custom-padding-bottom">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="top_title mb-md-5 mb-3">
+                            <h1 class="main-title text-start">
+                                Ready to take your legal practice to the next level?
+                            </h1>
+                            <p class="text-start">
+                                Contact us today to learn more about how we can help you generate high-quality car
+                                accident leads.
+                            </p>
+                        </div>
+                        <div class="contact_item_wrap">
+                            <div class="contact_item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="text">
+                                    <h4>Our Address:</h4>
+                                    <p class="text-start">
+                                        1341 Branton Boulevard, Suite 105, Knoxville, TN 37922
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact_item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="text">
+                                    <h4>Phone:</h4>
+                                    <p>
+                                        888-375-0317
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact_item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-fax"></i>
+                                </div>
+                                <div class="text">
+                                    <h4>Fax:</h4>
+                                    <p>
+                                        865-259-0998
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact_item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="text">
+                                    <h4>Email:</h4>
+                                    <p>info@ootenlawfirm.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact_item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="text">
+                                    <h4>Office Hours:</h4>
+                                    <p>M-F 8:00 – 6:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="contact_form">
+                            <h3 style="color: #2F3645;" class="sub-title mb-3">Send Message to us.</h3>
+                            <form action="https://ootenlawfirm.fexpink.com/contact-us/send" method="post">
+                                <input type="hidden" name="_token" value="GEjB9PlhPklLNfdcUH1FT85MwV6fTu71BeOeRNdv"
+                                    autocomplete="off">
+
+
+
+                                <div class="form-group mb-3">
+                                    <label for="name">Name:
+                                        <span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control" placeholder="Jhon Doe" id="">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="phone_number">Phone Number:
+                                        <span class="text-danger">*</span></label>
+                                    <input type="text" name="phone_number" class="form-control"
+                                        placeholder="888-999-1010" id="phone_number">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="email">Email Address:
+                                        <span class="text-danger">*</span></label>
+                                    <input type="email" name="email" class="form-control"
+                                        placeholder="yourname@company.com" id="">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="messages">Messages</label>
+                                    <textarea name="message" class="form-control" id="" rows="8"></textarea>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="agree" class="contact-label text-start">
+                                        <input type="checkbox" name="agree" class="form-check-input shadow-none"
+                                            id="agree" checked="">
+                                        Yes, I want to receive exclusive updates, offers, and news via text message from
+                                        Ootenlawfirm. By providing my phone number and checking this box, I agree to
+                                        receive recurring automated promotional messages. Message and data rates may
+                                        apply. Reply STOP to unsubscribe. View our Privacy Policy and Terms of Service.
+                                    </label>
+                                </div>
+                                <a href="#" class="btn secondery_btn primary-shade-3-bg w-auto mt-3">Submit</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer section -->
+    <section class="bg-white section-gap-margin mb-0">
+        <div class="container">
+            <footer id="berken_footer" class="section-gap-pad pb-4">
+                <div class="row align-items-top g-4">
+                    <div class="col-xl-3 col-md-4 col-12 mb-3">
+                        <img src="./img/berken-media-logo 1.png" alt="" class="img-fluid">
+                        <div class="border-bottom  pb-4 mb-4"></div>
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item mb-3">
+                                <div class="icon-group align-items-start footer-left-sec-text">
+                                    <a href="#">
+                                        <i class="fa-solid fa-phone me-1"></i>
+                                        (888) 123-12347
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <div class="icon-group align-items-start footer-left-sec-text">
+                                    <span>
+                                        <i class="fa-solid fa-location-dot me-1"></i>
+                                    </span>
+                                    <a href="#">
+
+                                        Chestnut Street, Suite 600,
+                                        Chattanooga, TN 37450
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <div class="icon-group">
+                                    <a href="#" class="icon">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <i class="fab fa-x"></i>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a class="icon d-md-none d-flex">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-12 mb-3">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact
+                                    Us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blogs</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Case
+                                    Studies</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-body-secondary">Disclaimer</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-12 mb-3">
+                        <h5 class="footer-title">Our Services</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">service
+                                    page</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">service
+                                    page</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">service
+                                    page</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">service
+                                    page</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">service
+                                    page</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-12 mb-3">
+                        <h1 class="card-title text-lg-end text-start primary-text mb-2">(888) 124-1234</h1>
+                        <h3 class="footer-subtitle text-lg-end text-start">CALL US NOW</h3>
+                        <div class="d-flex align-items-center justify-content-lg-end justify-content-start">
+                            <a href="#" class="btn secondery_btn primary-bg">Book A Meeting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+                    <p>© 2024 Company, Inc. All rights reserved.</p>
+                    <p>
+                        <a href="#">
+                            Terms and Conditions
+                        </a>
+                        <span class="border-end mx-2"></span>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper_2 = new Swiper('.swiper_2', {
+                slidesPerView: 1,
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true, // Optional: allows pagination bullets to be clickable
+                },
+                navigation: {
+                    nextEl: '.swiper-go-next',
+                    prevEl: '.swiper-go-prev',
+                },
+            });
+        });
+
+    </script>
+</body>
+
+</html>

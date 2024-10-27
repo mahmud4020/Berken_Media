@@ -498,12 +498,6 @@ a.nav-link.active {
         flex-direction: column-reverse;
     }
 
-    .full-width-img {
-        position: relative !important;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 90% !important;
-    }
 
     .faq-title {
         font-size: 16px;
@@ -647,6 +641,17 @@ a.nav-link.active {
 }
 
 @media only screen and (max-width: 767px) {
+    .barken_media .reverse-section{
+        flex-direction: column;
+        display: flex;
+    }
+    .full-width-img,
+    .full-width-img-2 {
+        position: relative !important;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 
     .card.custom-padding-about-sec {
         padding: 20px 25px;
@@ -849,6 +854,17 @@ a.nav-link.active {
     z-index: -1;
     width: 50%;
     height: 100%;
+    object-fit: cover;
+}
+.full-width-img-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
 }
 
 
@@ -997,3 +1013,6 @@ a.nav-link.active {
     }
 
 }
+
+
+/* contact us page */
