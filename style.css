@@ -488,6 +488,10 @@ a.nav-link.active {
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 991px) {
+    .hero-left-space {
+        padding: 15px !important;
+    }
+
     .hero-section.no-bg-img {
         display: flex;
         flex-direction: column-reverse;
@@ -497,7 +501,7 @@ a.nav-link.active {
         position: relative !important;
         margin: 0 auto;
         margin-bottom: 20px;
-        width: 90%;
+        width: 90% !important;
     }
 
     .faq-title {
@@ -509,11 +513,8 @@ a.nav-link.active {
         margin-left: .255em;
         vertical-align: .255em;
         content: "\f107";
-        /* Corrected to Unicode escape sequence */
         font-family: "Font Awesome 5 Free";
-        /* Set the appropriate font-family */
         font-weight: 900;
-        /* Optional, depends on the icon set */
         border: 0;
         right: 0;
         position: absolute;
@@ -645,6 +646,10 @@ a.nav-link.active {
 }
 
 @media only screen and (max-width: 767px) {
+    .right-img {
+        margin-top: 35px;
+    }
+
     .row-reverse {
         flex-direction: column-reverse;
     }
@@ -834,6 +839,7 @@ a.nav-link.active {
     right: 0;
     z-index: -1;
     width: 50%;
+    height: 100%;
 }
 
 .full-width-img-2 {
@@ -846,7 +852,7 @@ a.nav-link.active {
 
 .full-width-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .hero-section.no-bg-img {
@@ -938,19 +944,20 @@ a.nav-link.active {
 .image-items p {
     font-size: 14px;
 }
+
 /* Our Approach */
 .hero-left-space {
     padding: 30px;
 }
 
-/* For screens 1024px and smaller */
-@media (max-width: 1024px) {
+/* For screens 1200px and smaller */
+@media (max-width: 1200px) {
     .hero-section.no-bg-img {
         padding: 30px 0;
     }
 
     .hero-left-space {
-        padding: 0 50px;
+        padding: 0;
     }
 
     .about-us-bg-effect::after,
@@ -964,6 +971,14 @@ a.nav-link.active {
 
 /* For screens 768px and smaller */
 @media (max-width: 768px) {
+    .image-items {
+        background-position: top;
+    }
+
+    .hero-left-space {
+        margin: 20px 0;
+        padding: 0 !important;
+    }
 
     .about-us-bg-effect::after,
     .about-us-bg-effect::before {
