@@ -829,9 +829,6 @@ a.nav-link.active {
     background-image: unset;
 }
 
-.hero-section {
-    position: relative;
-}
 
 .full-width-img {
     position: absolute;
@@ -842,13 +839,6 @@ a.nav-link.active {
     height: 100%;
 }
 
-.full-width-img-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 50%;
-}
 
 .full-width-img img {
     width: 100%;
