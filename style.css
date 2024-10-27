@@ -489,6 +489,9 @@ a.nav-link.active {
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 991px) {
 
+    .card.custom-padding-about-sec {
+        padding: 30px 35px;
+    }
 
     .hero-section.no-bg-img {
         display: flex;
@@ -644,6 +647,10 @@ a.nav-link.active {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .card.custom-padding-about-sec {
+        padding: 20px 25px;
+    }
     .right-img {
         margin-top: 35px;
     }
@@ -771,12 +778,14 @@ a.nav-link.active {
 
 /* For devices with a max width of 768px (tablets and small devices) */
 @media only screen and (max-width: 768px) {
-    .stars-bg{
+    .stars-bg {
         padding: 0 6px;
     }
+
     .star {
         font-size: 18px;
     }
+
     .review-main-txt {
         font-size: 24px !important;
     }
@@ -854,36 +863,41 @@ a.nav-link.active {
 
 .about-us-bg-effect {
     position: relative;
-    z-index: 1;
 }
 
 .about-us-bg-effect::after {
     content: '';
     border-radius: 181.5px;
     background: var(--Color-3, #3097B2);
-    filter: blur(130px);
-    width: 200px;
-    height: 200px;
+    filter: blur(200px);
+    width: 363px;
+    height: 363px;
     flex-shrink: 0;
     position: absolute;
     bottom: 0;
     z-index: -1;
     left: 0;
+    transform: translate(-30%);
 }
 
 .about-us-bg-effect::before {
     content: '';
     border-radius: 181.5px;
     background: var(--Color-3, #3097B2);
-    filter: blur(130px);
-    width: 200px;
-    height: 200px;
+    filter: blur(200px);
+    width: 363px;
+    height: 363px;
     flex-shrink: 0;
     position: absolute;
     top: 0;
     z-index: -1;
     right: 0;
+    transform: translate(30%);
 
+}
+
+.card.custom-padding-about-sec {
+    padding: 40px 45px;
 }
 
 /* slider section */
@@ -966,6 +980,7 @@ a.nav-link.active {
         height: 200px;
         filter: blur(100px);
     }
+
     .review-main-txt {
         padding: 0 20px;
     }
