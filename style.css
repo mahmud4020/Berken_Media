@@ -488,9 +488,7 @@ a.nav-link.active {
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 991px) {
-    .hero-left-space {
-        padding: 15px !important;
-    }
+
 
     .hero-section.no-bg-img {
         display: flex;
@@ -773,7 +771,12 @@ a.nav-link.active {
 
 /* For devices with a max width of 768px (tablets and small devices) */
 @media only screen and (max-width: 768px) {
-
+    .stars-bg{
+        padding: 0 6px;
+    }
+    .star {
+        font-size: 18px;
+    }
     .review-main-txt {
         font-size: 24px !important;
     }
@@ -935,19 +938,11 @@ a.nav-link.active {
     font-size: 14px;
 }
 
-/* Our Approach */
-.hero-left-space {
-    padding: 30px;
-}
 
 /* For screens 1200px and smaller */
 @media (max-width: 1200px) {
     .hero-section.no-bg-img {
         padding: 30px 0;
-    }
-
-    .hero-left-space {
-        padding: 0;
     }
 
     .about-us-bg-effect::after,
@@ -965,18 +960,15 @@ a.nav-link.active {
         background-position: top;
     }
 
-    .hero-left-space {
-        margin: 20px 0;
-        padding: 0 !important;
-    }
-
     .about-us-bg-effect::after,
     .about-us-bg-effect::before {
         width: 200px;
         height: 200px;
         filter: blur(100px);
     }
-
+    .review-main-txt {
+        padding: 0 20px;
+    }
 }
 
 /* For screens 480px and smaller */
