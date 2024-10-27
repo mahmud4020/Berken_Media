@@ -650,7 +650,7 @@ a.nav-link.active {
         position: relative !important;
         margin: 0 auto;
         margin-bottom: 20px;
-        width: 100%;
+        width: 70% !important;
     }
 
     .card.custom-padding-about-sec {
@@ -835,6 +835,14 @@ a.nav-link.active {
     .swiper-go-prev i {
         font-size: 25px !important;
     }
+    .full-width-img,
+    .full-width-img-2 {
+        position: relative !important;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 90% !important;
+    }
+
 }
 
 
@@ -844,6 +852,7 @@ a.nav-link.active {
 /* hero-sec */
 .no-bg-img {
     background-image: unset;
+    overflow: hidden;
 }
 
 
@@ -855,6 +864,7 @@ a.nav-link.active {
     width: 50%;
     height: 100%;
     object-fit: cover;
+    display: flex;
 }
 .full-width-img-2 {
     position: absolute;
@@ -868,9 +878,10 @@ a.nav-link.active {
 }
 
 
-.full-width-img img {
-    width: 100%;
-    height: 100%;
+.full-width-img img,
+.full-width-img-2 img {
+    /* height: 600px; */
+    object-fit: cover;
 }
 
 .hero-section.no-bg-img {
