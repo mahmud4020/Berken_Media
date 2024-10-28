@@ -271,8 +271,8 @@ a.nav-link.active {
 }
 
 #berken_footer a.icon {
-    border: 1px solid gray;
-    color: gray;
+    border: 1px solid var(--gray);
+    color: var(--gray);
 }
 
 .footer-title {
@@ -424,8 +424,8 @@ a.nav-link.active {
 /* contact us */
 /* Contact Us Sections*/
 .barken_media .form-check-input:checked {
-    background-color: gray;
-    border-color: gray;
+    background-color: var(--gray);
+    border-color: var(--gray);
 }
 
 .custom-padding-bottom {
@@ -464,7 +464,7 @@ a.nav-link.active {
 .contact_item_wrap .contact_item .text {
     font-size: 16px;
     font-weight: 400;
-    color: gray;
+    color: var(--gray);
 }
 
 .contact_form h3 {
@@ -488,6 +488,15 @@ a.nav-link.active {
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 991px) {
+    .full-width-img img, .full-width-img-2 img{
+        object-fit: fill !important;
+    }
+    .row-reverse-top {
+        flex-direction: column-reverse;
+    }
+    .top-content-vertical-space{
+        margin-bottom: 20px;
+    }
 
     .card.custom-padding-about-sec {
         padding: 30px 35px;
@@ -860,7 +869,7 @@ a.nav-link.active {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     width: 50%;
     height: 100%;
     object-fit: cover;
@@ -870,7 +879,7 @@ a.nav-link.active {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     width: 50%;
     height: 100%;
     display: flex;
@@ -882,6 +891,7 @@ a.nav-link.active {
 .full-width-img-2 img {
     /* height: 600px; */
     object-fit: cover;
+    width: 100%;
 }
 
 .hero-section.no-bg-img {

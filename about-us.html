@@ -97,7 +97,8 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-center" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link active text-center" aria-current="page"
+                                        href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item text-center">
                                     <a class="nav-link" href="about-us.html">About Us</a>
@@ -316,8 +317,8 @@
                                 <div class="card-top-icon mb-3">
                                     <img src="./img/peoples.png" alt="" class="img-fluid">
                                 </div>
-                                <div class="card-middle-number mb-2">
-                                    2000+
+                                <div class="card-middle-number mb-2 count"  data-target="2000">
+                                    0+
                                 </div>
                                 <div class="card-bottom-text">
                                     Satisfied Clients
@@ -348,7 +349,7 @@
         <!-- hoose Berken section -->
         <section class="section-gap-pad">
             <div class="container">
-                <div class="row g-md-5 g-3 row-reverse">
+                <div class="row g-md-5 g-4 row-reverse">
                     <div class="col-lg-7 col-md-6 col-12">
                         <h1 class="main-title text-start mb-3">Choose Berken</h1>
                         <p class="text-start">
@@ -453,41 +454,43 @@
         </section> -->
 
         <!-- Our Approach section -->
-         
-        <div class="hero-section no-bg-img">
-            <div class="container">
-                <div class="row align-items-center gy-3 row-reverse mx-auto">
-                    <div class="col-md-6 p-0">
-                        <div class="pe-md-5 py-md-5 py-3">
-                            <h1 class="main-title">
-                                Our Approach
-                            </h1>
-                            <p>
-                                Effectiveness and simplicity is what characterize our approach. Our digital
-                                marketing
-                                services for law firms include social media marketing, PPC services for lawyers, and
-                                SEO
-                                optimization to ensure that your law firm is the first choice for those seeking
-                                immediate legal assistance. Once we have attracted the potential client's attention,
-                                we
-                                analyze your law firm's criteria to ensure that both parties match. In this way, we
-                                ensure that the potential clients we provide are not simply consultations, but
-                                rather,
-                                real cases with potential success.
-                            </p>
-                            <div class="d-flex">
-                                <a href="#" class="btn secondery_btn primary-shade-3-bg w-auto">Contact Us</a>
+
+        <section class="bg-white">
+            <div class="hero-section no-bg-img">
+                <div class="container">
+                    <div class="row align-items-center gy-3 row-reverse mx-auto">
+                        <div class="col-md-6 p-0">
+                            <div class="pe-md-5 py-md-5 py-3">
+                                <h1 class="main-title">
+                                    Our Approach
+                                </h1>
+                                <p>
+                                    Effectiveness and simplicity is what characterize our approach. Our digital
+                                    marketing
+                                    services for law firms include social media marketing, PPC services for lawyers, and
+                                    SEO
+                                    optimization to ensure that your law firm is the first choice for those seeking
+                                    immediate legal assistance. Once we have attracted the potential client's attention,
+                                    we
+                                    analyze your law firm's criteria to ensure that both parties match. In this way, we
+                                    ensure that the potential clients we provide are not simply consultations, but
+                                    rather,
+                                    real cases with potential success.
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="btn secondery_btn primary-shade-3-bg w-auto">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="full-width-img">
+                    <img src="./img/Our-Approach.png" alt="" class="img-fluid w-100">
+                </div>
             </div>
-            <div class="full-width-img">
-                <img src="./img/Our-Approach.png" alt="" class="img-fluid w-100">
-            </div>
-        </div>
+        </section>
 
-         <!-- Our Commitment section -->
+        <!-- Our Commitment section -->
         <section>
             <div class="hero-section no-bg-img reverse-section">
                 <div class="full-width-img-2">
@@ -516,7 +519,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </section>
 
@@ -824,7 +827,7 @@
                 <h5 class="get-in-subtitle mb-2">
                     Get in Touch
                 </h5>
-                <h1 class="main-title text-white mb-2">
+                <h1 class="main-title text-white mb-3">
                     Future-Proof Your Practice
                 </h1>
                 <p class="text-white">
@@ -1261,6 +1264,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 20, // Space between slides in pixels
@@ -1313,7 +1321,35 @@
             });
         });
 
+    </script>
 
+    <script>
+        $(document).ready(function () {
+            $('.count').each(function () {
+                const $this = $(this);
+                const targetValue = $this.data('target');
+
+                // Waypoint to trigger when the element is in the viewport
+                $this.waypoint(function () {
+                    // Animate the counter from 0 to the target value
+                    $({ countNum: $this.text() }).animate(
+                        { countNum: targetValue },
+                        {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.ceil(this.countNum) + '+');
+                            },
+                            complete: function () {
+                                $this.text(targetValue + '+'); // Ensure final value
+                            }
+                        }
+                    );
+
+                    this.destroy(); // Trigger once
+                }, { offset: '75%' }); // Trigger when 75% of the element is in view
+            });
+        });
 
 
     </script>
